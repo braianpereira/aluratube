@@ -35,4 +35,16 @@ export const CSSReset = createGlobalStyle`
       opacity: .5;
     }
   }
+  a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+  }
+
+  a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+  }
 `;
+

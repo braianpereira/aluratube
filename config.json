@@ -2,6 +2,29 @@
     "name": "Bráian Pereira",
     "job": "Desenvolvedor",
     "github": "braianpereira",
+    "banner":"https://images.unsplash.com/photo-1510511459019-5dda7724fd87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "favoritos": [
+        {
+            "name": "Alura",
+            "tag": "Alura",
+            "thumbnail": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "name": "Cade a Chave",
+            "tag": "cadeachave",
+            "thumbnail": "https://yt3.ggpht.com/ytc/AMLnZu9eX9_oNp3CNRb_uae85G7GTweRV5onIk1W0YPGtA=s88-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "name": "Canal do Pirulla",
+            "tag": "Pirulla25",
+            "thumbnail": "https://yt3.ggpht.com/ytc/AMLnZu-HVpr3oVQS6o2hXWyO_wWIKZ0n5ioWBgyp4reS=s88-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "name": "Ospa",
+            "tag": "ospaRS",
+            "thumbnail": "https://yt3.ggpht.com/65lMXFd1lvCMO7wVt9osL8CoYBPWOt5pw1NUiFWECD76NZ0zZH4Z-TDdR5dJu4BLqyCNKWqEvw=s88-c-k-c0x00ffffff-no-rj"
+        }
+    ],
     "playlists": {
         "jogos": [
             {

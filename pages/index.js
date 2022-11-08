@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {CSSReset} from "../src/components/CSSReset";
 import Menu from "../src/components/menu";
 import {StyledTimeline} from "../src/components/TimeLine";
+import Favoritos from "../src/components/Favoritos";
 
 function HomePage() {
 	return (
@@ -11,12 +12,12 @@ function HomePage() {
 			<div style={{
 				display: "flex",
 				flexDirection: "column",
-				flex: 1,
-				// backgroundColor: "red",
+				flex: 1
 			}}>
 				<Menu />
 				<Header />
 				<TimeLine  playlists={config.playlists}/>
+				<Favoritos />
 			</div>
 		</>
 	)
@@ -25,7 +26,7 @@ function HomePage() {
 export default HomePage
 
 const StyledHeader = styled.div`
-	img {
+	.perfil-img {
 	  width: 80px;
 	  height: 80px;
 	  border-radius: 50%;
@@ -38,14 +39,22 @@ const StyledHeader = styled.div`
 	padding: 16px 32px;
 	gap: 16px;
   }
+  .banner {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+	
+  }
 `
 
 function Header() {
 	return (
 		<StyledHeader>
-			{/*<img src="banner" alt=""/>*/}
+			<section>
+				<img className={'banner'} src={config.banner} alt=""/>
+			</section>
 			<section className={'user-info'}>
-				<img src={`https://github.com/${config.github}.png`} alt=""/>
+				<img className={'perfil-img'} src={`https://github.com/${config.github}.png`} alt=""/>
 				<div>
 					<h2>{config.name}</h2>
 					<p>{config.job}</p>
@@ -62,15 +71,15 @@ function TimeLine(props) {
 	//Retorno por expressão
 	return (
 		<StyledTimeline>
-			{playlistNames.map((playlistName) => {
+			{playlistNames.map((playlistName, index) => {
 				const videos = props.playlists[playlistName]
 				return (
-					<section>
+					<section key={index}>
 						<h2>{playlistName}</h2>
 						<div>
-							{videos.map((video) => {
+							{videos.map((video, videoIndex) => {
 								return (
-									<a href={video.uri}>
+									<a key={videoIndex} href={video.uri}>
 										<img src={video.thumb} alt=""/>
 										<span>
 											{video.title}
@@ -86,3 +95,4 @@ function TimeLine(props) {
 		</StyledTimeline>
 	)
 }
+
