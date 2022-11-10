@@ -5,6 +5,9 @@ export const StyledTimeline = styled.div`
   width: 100%;
   padding: 16px;
   overflow: hidden;
+  .video-item:hover {
+	cursor: pointer;
+  }
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
